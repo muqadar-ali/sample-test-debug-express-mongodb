@@ -1,0 +1,45 @@
+### hello world
+GET http://127.0.0.1:3000/ HTTP/1.1
+
+#### get all records
+GET http://127.0.0.1:3000/amplitude HTTP/1.1
+
+### create data
+POST http://127.0.0.1:3000/amplitude HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "aa463b66-6171-4208-b8a6-b07dd73a25f101",
+    "eventTime": "2022-02-04T00:47:05.130Z",
+    "eventType": "action_abc3_captain",
+    "loc": { "type": "Point", "coordinates": [ -76.703347, 30.710459 ] },
+    "deviceId": "abcdef",
+    "rideId": "123456789" 
+}
+
+#### get linked accounts
+POST http://127.0.0.1:3000/accounts HTTP/1.1
+content-type: application/json
+
+{
+    "userId":"aa463b66-6171-4208-b8a6-b07dd73a25f8",
+    "days": 22
+}
+
+### did user attempt to call?
+POST http://127.0.0.1:3000/userCallCaptain HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "aa463b66-6171-4208-b8a6-b07dd73a25f81",
+    "eventType": "action_call_captain",
+    "rideId": "123456789" 
+}
+
+### captain or user location
+POST http://127.0.0.1:3000/userLocation HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "aa463b66-6171-4208-b8a6-b07dd73a25f101"
+}

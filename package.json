@@ -1,0 +1,28 @@
+{
+  "name": "sample-test-debug-express-mongodb",
+  "version": "1.0.0",
+  "description": "Sample test project to quickly debug a query or code snippet",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muqadar-ali/sample-test-debug-express-mongodb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muqadar-ali/sample-test-debug-express-mongodb/issues"
+  },
+  "homepage": "https://github.com/muqadar-ali/sample-test-debug-express-mongodb#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
